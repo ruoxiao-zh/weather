@@ -22,17 +22,21 @@ $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 $weather = new Weather($key);
 ```
 
-
-##### 获取实时天气
+#### 获取实时天气
 
 ```php
-$response = $weather->getWeather('深圳');
+$response = $w->getLiveWeather('深圳');
+```
+
+#### 获取天气预报
+
+```php
+$response = $w->getForecastsWeather('深圳');
 ```
 
 ##### 示例：
 
 ```php
-
 {
     "status": "1",
     "count": "1",
