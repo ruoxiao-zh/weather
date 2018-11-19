@@ -9,11 +9,20 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
     },
     "autoload": {
         "psr-4": {
             "Ellison\\Weather\\": "./src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ellison\\Weather\\ServiceProvider"
+            ]
         }
     }
 }
