@@ -1,0 +1,19 @@
+{
+    "name": "ellison\/weather",
+    "description": "a weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ellison",
+            "email": "ruoxiaozh@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ellison\\Weather\\": "./src"
+        }
+    }
+}
